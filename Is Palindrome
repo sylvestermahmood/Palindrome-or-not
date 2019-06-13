@@ -1,0 +1,52 @@
+
+<html>
+
+<head>
+    <title> is Palindrome</title>
+</head>
+
+<style>
+    body{
+        background-color: black;
+    }
+
+    .Style {
+        color: #ffffff;
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+    }
+</style>
+<body>
+    <div id="Style" class="style"> </div>
+    <script>
+        
+        let is_palindrome = () =>
+        {
+            let str = prompt("Enter a Word : ")
+            let arr = str.split('');
+            console.log(str, "\n", arr)
+            let rev = arr.reverse();
+            console.log(rev)
+            let str1 = rev.join("");
+            console.log(str1)
+
+            if (str == str1)
+            {
+                document.getElementById("Style").innerHTML = str + " is a Palindrome String "  ;
+            }
+            else if (str != str1)
+            {
+                document.getElementById("Style").innerHTML = str + " is not a Palindrome String " ;
+            }
+            
+        }
+
+        is_palindrome();
+
+    </script>
+
+
+</body>
+
+</html>
